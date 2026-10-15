@@ -4,7 +4,6 @@
 require_once __DIR__ . '/config.php';
 
 // Replace these placeholders with your NEW PaaS MySQL details.
-$host = 'YOUR_MYSQL_INTERNAL_HOST';
 $port = '3306';
 $dbname = 'cantech_crud';
 $username = 'cantech_app';
