@@ -7,8 +7,8 @@ require_once __DIR__ . '/config.php';
 $host = '192.168.15.92';
 $port = '3306';
 $dbname = 'cantech_crud';
-$username = 'cantech_app';
-$password = 'YOUR_DATABASE_PASSWORD';
+$username = 'root';
+$password = 'RKBytr10597';
 
 try {
     $pdo = new PDO(
