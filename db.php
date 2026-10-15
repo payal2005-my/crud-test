@@ -7,7 +7,7 @@ require_once __DIR__ . '/config.php';
 $host = '192.168.15.92';
 $port = '3306';
 $dbname = 'cantech_crud';
-$username = 'root';
+$username = 'cantech_app';
 $password = 'RKBytr10597';
 
 try {
