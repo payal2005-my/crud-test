@@ -8,7 +8,7 @@ $host = '192.168.15.92';
 $port = '3306';
 $dbname = 'cantech_crud';
 $username = 'cantech_app';
-$password = 'RKBytr10597';
+$password = 'CRUD@test2005';
 
 try {
     $pdo = new PDO(
