@@ -1,19 +1,15 @@
+```php
 <?php
 // db.php
 
 require_once __DIR__ . '/config.php';
 
-$host = app_env('DB_HOST');
-$port = app_env('DB_PORT', '3306');
-$dbname = app_env('DB_NAME', 'cantech_crud');
-$username = app_env('DB_USER');
-$password = app_env('DB_PASSWORD');
-
-if (!$host || !$username || $password === null) {
-    error_log('Database configuration is incomplete.');
-    http_response_code(503);
-    exit('Database configuration is incomplete.');
-}
+// Replace these placeholders with your NEW PaaS MySQL details.
+$host = 'YOUR_MYSQL_INTERNAL_HOST';
+$port = '3306';
+$dbname = 'cantech_crud';
+$username = 'cantech_app';
+$password = 'YOUR_DATABASE_PASSWORD';
 
 try {
     $pdo = new PDO(
@@ -31,3 +27,4 @@ try {
     http_response_code(503);
     exit('Database is temporarily unavailable. Please try again later.');
 }
+```
