@@ -1,4 +1,4 @@
-USE cantech_crud;
+USE crud;
 
 CREATE TABLE IF NOT EXISTS users (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
