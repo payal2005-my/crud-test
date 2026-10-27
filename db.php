@@ -1,14 +1,14 @@
+
 <?php
 // db.php
 
 require_once __DIR__ . '/config.php';
 
-// Replace these placeholders with your NEW PaaS MySQL details.
-$host = '192.168.15.92';
+$host = 'localhost';
 $port = '3306';
-$dbname = 'crud';
-$username = 'app';
-$password = 'CRUD@test2005';
+$dbname = 'test-final_crud';
+$username = 'test-final_app';
+$password = getenv('DB_PASSWORD') ?: '';
 
 try {
     $pdo = new PDO(
@@ -26,4 +26,3 @@ try {
     http_response_code(503);
     exit('Database is temporarily unavailable. Please try again later.');
 }
-
