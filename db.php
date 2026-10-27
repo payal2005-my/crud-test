@@ -8,7 +8,7 @@ $host = 'localhost';
 $port = '3306';
 $dbname = 'test-final_crud';
 $username = 'test-final_app';
-$password = getenv('DB_PASSWORD') ?: '';
+$password = 'CRUD@test2005';
 
 try {
     $pdo = new PDO(
